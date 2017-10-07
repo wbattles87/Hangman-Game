@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Will Battles Hangman</title>
-	<!--  -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-
-
+	<title> Will Battles Hangman Game </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="reset.css">
 </head>
 <body>
 
-<div class="maincontainer">
-	<div class="header">
-		<h1>Hangman Game</h1> 
-		<h3>By Will Battles</h3> 
-		<h3>Texan Player Hangman</h3> 
-	</div>
-
-	<div class="underscore"></div>
-	<div class="rightGuess"> Correct Guesses </div>
-	<div class="wrongGuess"> Wrong Guess </div>
-
+<div class="wrapper">
+   <h1>Hangman</h1>
+    <h2> Guess the Houston Texan Player </h2>
+    <p>Use the alphabet below to guess the word, or click hint to get a clue. </p>
+</div>
+<div class="wrapper">
+    <div id="buttons">
+    </div>
+    <br>
+    <br>  
+    <p id="catagoryName"></p>
+    <br>
+    <br>
+    <div id="hold">
+    </div>
+    <p id="mylives"></p> 
+    <div class="container">
+      <button id="reset">Play again</button>
+    </div>
 </div>
 
-
-
-<script src="assets/javascript/game.js"></script>
+<script src="game.js"></script>
+</div>
 </body>
 </html>
