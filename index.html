@@ -2,33 +2,55 @@
 <html>
 <head>
 	<title> Will Battles Hangman Game </title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="reset.css">
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 </head>
 <body>
 
-<div class="wrapper">
-   <h1>Hangman</h1>
-    <h2> Guess the Houston Texan Player </h2>
-    <p>Use the alphabet below to guess the word, or click hint to get a clue. </p>
-</div>
-<div class="wrapper">
-    <div id="buttons">
+<div class="header">
+    <div class="leftlogo col-xs-12 col-sm-8 col-md-3">
+        <img src="assets/css/images/texanlogo.png" alt="texan logo" style="width:304px;height:228px;">
     </div>
-    <br>
-    <br>  
-    <p id="catagoryName"></p>
-    <br>
-    <br>
-    <div id="hold">
+
+    <div class="midsection col-xs-12 col-sm-8 col-md-6">
+        <h1>Hangman</h1>
+        <h2> Guess the Houston Texan Player </h2>
+        <p>Use the alphabet below to guess the word</p>
     </div>
-    <p id="mylives"></p> 
-    <div class="container">
-      <button id="reset">Play again</button>
+
+    <div class="rightlogo col-xs-12 col-sm-8 col-md-3">
+        <img src="assets/css/images/texanlogo.png" alt="texan logo" style="width:304px;height:228px;">
     </div>
+    
 </div>
 
-<script src="game.js"></script>
+<div class="wrapper col-xs-12 col-sm-12 col-md-5">
+    <div id="buttons">
+    </div>
+</div>    
+
+<div class = "rightside col-xs-12 col-sm-12 col-md-5">
+    <p id="catagoryName"></p>
+    
+    <br>
+    <br>
+    
+    <div id="hold">
+    </div>
+    
+    <p id="mylives"></p>
+</div>
+
+
+<div class="container col-xs-12 col-sm-12 col-md-12">
+    <button id="reset">Play again</button>
+</div>
+
+
+<script src="assets/javascript/game.js"></script>
 </div>
 </body>
 </html>

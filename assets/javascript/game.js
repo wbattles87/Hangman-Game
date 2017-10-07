@@ -18,8 +18,7 @@ window.onload = function ()
 	// Get elements
 	var showLives = document.getElementById("mylives");
 	var showCatagory = document.getElementById("scatagory");
-	var getHint = document.getElementById("hint");
-	var showClue = document.getElementById("clue");
+
 
 
 
@@ -168,12 +167,12 @@ window.onload = function ()
 
    // Reset
 
-  document.getElementById("reset").onclick = function() {
-    correct.parentNode.removeChild(correct);
-    letters.parentNode.removeChild(letters);
-    showClue.innerHTML = "";
-    context.clearRect(0, 0, 400, 400);
+  document.getElementById("reset").onclick = function() 
+  {
+  	document.getElementById("catagoryName").innerHTML="";
+  	document.getElementById("hold").innerHTML="";
+  	document.getElementById("mylives").innerHTML="";
+  	document.getElementById("buttons").innerHTML="";
     play();
   }
-
 }

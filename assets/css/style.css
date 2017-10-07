@@ -1,79 +1,125 @@
-body {
-  background:$base-color;
+body 
+{
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-  color:$white;
-  height:100%;
-  text-align:center;
+  background-image: url("images/backgroundimage3.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
   font-size:18px;
 }
 
-.wrappper{
-  @include clear;
+
+.header
+{
+  width: 100%;
+  height: 250px;
+}
+
+.leftlogo
+{
+  float: left;
+}
+
+.rightlogo
+{
+  float: right;
+
+}
+
+#hold
+{
+  color: white;
+}
+
+.wrappper
+{
   width:100%;
   margin:0 auto;
 }
 
-
-canvas{
-  color:$white;
-  border: $white dashed 2px;
-  padding:15px;
+.rightside
+{
+  margin:0 auto;
+  margin-left: 150px;
 }
 
-h1, h2, h3 {
+#letter
+{
+  text-align: center;
+}
+
+#buttons
+{
+  text-align: center;
+}
+
+.container
+{
+  margin-top: 20px;
+}
+
+h1, h2, h3 
+{
+  color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   text-transform: uppercase;
-   margin:5px 0;
+  margin:5px 0;
 }
 
-h1 {
+h1 
+{
   font-size: 2.6em;
 }
 
-h2 {
+h2 
+{
   font-size: 1.6em;
 }
 
 p{
   font-size: 1.6em;
+  color: white;
 }
 
-#alphabet {
-  @include clear;
-  margin:15px auto;
-  padding:0;
-  max-width:900px;
+#alphabet 
+{
+  text-align: center;
+  margin: 15px auto;
+  padding: 0;
+  max-width: 900px;
 }
 
-#alphabet li {
+#alphabet li 
+{
+  text-align: center;
   float:left;
   margin: 0 10px 10px 0;
   list-style:none;
   width:35px;
-  height:30px;
+  height:40px;
   padding-top:10px;
-  background:$white;
-  color:$base-color;
-  cursor:pointer;
-  @include corners(5px);
-  border: solid 1px $white;
-    
-    &:hover{
-      background:$base-color;
-      border: solid 1px $white;
-      color:$white;
-    }
+  background: white;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+  border: solid 1px white;
 }
 
-#my-word {
+#my-word 
+{
+  text-align: center;
   margin: 0;
   display: block;
   padding: 0;
   display:block;
 }
 
-#my-word li {
+#my-word li 
+{
+  text-align: center;
   position: relative;
   list-style: none;
   margin: 0;
@@ -82,15 +128,6 @@ p{
   font-size:1.6em;
 }
 
-.active {
-  @include opacity;
-  cursor:default;
-    
-  &:hover{
-      @include fade;
-      @include opacity;
-    }
-}
 
 #mylives{
   font-size:1.6em;
@@ -98,11 +135,11 @@ p{
   display:block;
 }
 
-button{
-  @include corners (5px);
-  background:$base-color;
-  color:$white;
-  border: solid 1px $white;
+button
+{
+  background-color: green;
+  color: white;
+  border: solid 1px white;
   text-decoration:none;
   cursor:pointer;
   font-size:1.2em;
